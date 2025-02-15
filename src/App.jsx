@@ -14,7 +14,7 @@ const ProfileCard = ({ name, role, description, image, github, linkedin, email }
         {name}
       </h3>
       <p className="text-violet-600 font-medium mb-3">{role}</p>
-      <p className="text-gray-600 mb-4 text-sm">{description}</p>
+      {/* <p className="text-gray-600 mb-4 text-sm">{description}</p> */}
       <div className="flex gap-4 text-gray-600">
         {github && (
           <a href={github} className="hover:text-violet-600 transition-colors">
@@ -241,10 +241,20 @@ const App = () => {
               Project Team
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Meet the developers behind this innovative AI-powered mathematics learning platform
+              Meet Honorable Supervisor and the team behind this innovative AI-powered mathematics learning platform
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+          <ProfileCard
+              name="Kashmi Sultana"
+              role="Project Supervisor"
+              description="Associate Professor at the Department of Computer Science & Engineering. Specializing in Artificial Intelligence, Machine Learning, and Educational Technology. Leading research in AI-enhanced learning systems."
+              image="/api/placeholder/200/200"
+              linkedin="https://linkedin.com/in/supervisor"
+              email="supervisor@university.edu"
+              isSupervisor={true}
+            />
+            <div className="grid grid-cols-2 gap-8">
             <ProfileCard
               name="Mohiuddin Khan Mahin"
               // role="Frontend Developer"
@@ -261,6 +271,7 @@ const App = () => {
               linkedin="https://linkedin.com/in/junaid9011"
               email="junaid@dreammatehq.com"
             />
+            </div>
           </div>
         </div>
       </section>
