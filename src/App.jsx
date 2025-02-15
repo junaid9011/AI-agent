@@ -250,8 +250,8 @@ const App = () => {
               role="Project Supervisor"
               description="Associate Professor at the Department of Computer Science & Engineering. Specializing in Artificial Intelligence, Machine Learning, and Educational Technology. Leading research in AI-enhanced learning systems."
               image="/api/placeholder/200/200"
-              linkedin="https://linkedin.com/in/supervisor"
-              email="supervisor@university.edu"
+              linkedin="https://linkedin.com/in/"
+              email="kashmisultana@cou.ac.bd"
               isSupervisor={true}
             />
             <div className="grid grid-cols-2 gap-8">
